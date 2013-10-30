@@ -8,5 +8,5 @@ builds:
         name: echo
         code: echo "python version"
     - script:
-        name: test connection
+        name: test riak connection
         code: python test.py

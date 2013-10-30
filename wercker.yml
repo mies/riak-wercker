@@ -1,7 +1,7 @@
 box: wercker/python
 services:
    - mjdsys/riak@0.0.7
-builds:
+build:
   steps:
     - pip-install
     - script:

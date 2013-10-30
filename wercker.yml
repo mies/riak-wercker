@@ -1,0 +1,12 @@
+box: wercker/python
+services:
+   - mjdsys/riak@0.0.7
+builds:
+  steps:
+    - pip-install
+    - script:
+        name: echo
+        code: echo "python version"
+    - script:
+        name: test connection
+        code: python test.py
